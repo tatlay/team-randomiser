@@ -8,11 +8,12 @@
     let randomiser = d.getElementById("randomiser");
     let reset = d.getElementById("reset");
     //empty array that keeps track of things
-    let store = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+    let store = [];
 
     // when add is clicked
     add.addEventListener("click", () => {
         //add to the array
+        
         store.push(players.value);
         // set the input to be blank
         players.value = "";
@@ -22,6 +23,7 @@
         let fragment = d.createDocumentFragment();
         // empty the list in HTML
         list1.textContent = "";
+        list2.textContent = "";
 
         // for each stored string
         store.forEach(string => {
@@ -34,8 +36,9 @@
         });
         // append the fragment to the list
         list1.appendChild(fragment);
+    
     });
- 
+     
     randomiser.addEventListener("click", () => {
         function randomFunc(shuffleArr) {      
         let l = shuffleArr.length, temp, index;  
@@ -88,9 +91,6 @@
 
         // append the fragment to the list
         list2.appendChild(fragment);
-
-        console.log(team1);
-        console.log(team2);
         
     
     });

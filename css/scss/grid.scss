@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 12vh 1fr 1fr 1fr;
+  grid-template-areas: 
+
+  "header header"
+  "input button"
+  "team1 team2"
+  "randomiser randomiser";
+}
+
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left right";
+}
+
+.button{
+	grid-area: right;
+}
+
+.randomiser{
+	grid-area: randomiser;
+}
