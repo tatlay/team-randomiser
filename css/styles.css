@@ -111,6 +111,7 @@ h1 {
 ol {
   font-size: 2em;
   font: #70DDB4;
+  font-family: "Oswald", sans-serif;
 }
 
 .teamOne {
@@ -123,9 +124,9 @@ ol {
 
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 12vh 8vh 1fr 7vh;
-  grid-template-areas: "header header header" "input input input" "team team team" "randomiser randomiser randomiser";
+  grid-template-columns: 5px 24fr 5px;
+  grid-template-rows: 12vh 2vh 1fr 7vh;
+  grid-template-areas: ". header ." ". input ." ". team ." ". randomiser .";
 }
 
 .randomiser {
@@ -136,8 +137,12 @@ footer {
   grid-area: randomiser;
 }
 
-input {
+section {
   grid-area: input;
+}
+
+main {
+  grid-area: team;
 }
 
 .addButton {
@@ -164,7 +169,7 @@ input {
   border-radius: 54px 5px 54px 5px;
   border: 0;
   width: 310px;
-  height: 50px;
+  height: 42px;
   color: white;
   position: relative;
   font-size: xx-large;
@@ -182,7 +187,7 @@ html {
 
 body {
   background-color: black;
-  height: 98vh;
+  height: 99vh;
 }
 
 header {
@@ -192,6 +197,13 @@ header {
   display: grid;
   justify-content: center;
   padding-bottom: 10px;
+}
+
+section {
+  grid-area: input;
+  display: inline-flex;
+  justify-content: center;
+  justify-content: end;
 }
 
 .container {
@@ -204,7 +216,7 @@ header {
 }
 
 .player-input {
-  width: 266px;
+  width: 268px;
   height: 40px;
   margin-right: 6px;
   font-size: 2em;
@@ -213,11 +225,17 @@ header {
 ol {
   color: #70DDB4;
   background-color: #12563D;
+  padding-left: 60px;
 }
 
 footer {
   display: flex;
   justify-content: center;
+  margin: -6px;
+}
+
+main {
+  margin: 6px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -4,7 +4,7 @@ html{
 
 body{
 	background-color: black;
-	height: 98vh;
+	height: 99vh;
 }
 
 header{
@@ -14,6 +14,13 @@ header{
 	display: grid;
 	justify-content: center; 
 	padding-bottom: 10px;
+}
+
+section{
+	grid-area: input;
+	display: inline-flex;
+	justify-content: center;
+	justify-content: end;
 }
 
 .container {
@@ -26,7 +33,7 @@ header{
 }
 
 .player-input{
-	width: 266px;
+	width: 268px;
 	height: 40px;
 	margin-right: 6px;
 	font-size: 2em;
@@ -35,6 +42,7 @@ header{
 ol{
 	color: #70DDB4;
 	background-color: #12563D;
+	padding-left: 60px;
 
   	
 }
@@ -42,4 +50,10 @@ ol{
 footer{
 	display: flex;
 	justify-content: center;
+	margin: -6px;
+}
+
+
+main{
+	margin: 6px;
 }

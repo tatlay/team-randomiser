@@ -1,13 +1,13 @@
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 12vh 8vh 1fr 7vh;
+  grid-template-columns: 5px 24fr 5px;
+  grid-template-rows: 12vh 2vh 1fr 7vh;
   grid-template-areas: 
 
-  "header header header"
-  "input input input"
-  "team team team"
-  "randomiser randomiser randomiser";
+  ". header ."
+  ". input ."
+  ". team ."
+  ". randomiser .";
 }
 
 .randomiser{
@@ -18,6 +18,10 @@ footer{
 	grid-area: randomiser;
 }
 
-input{
+section{
 	grid-area: input;
+}
+
+main{
+	grid-area: team;
 }
