@@ -4,6 +4,7 @@ html{
 
 body{
 	background-color: black;
+	height: 98vh;
 }
 
 header{
@@ -12,6 +13,7 @@ header{
 	margin: 6px;
 	display: grid;
 	justify-content: center; 
+	padding-bottom: 10px;
 }
 
 .container {
@@ -19,10 +21,25 @@ header{
 }
 
 .form-group{
-
+	display: flex;
+	justify-content: right;
 }
 
-.form-control{
-	width: 73vw;
-	margin-left: 6px;
+.player-input{
+	width: 266px;
+	height: 40px;
+	margin-right: 6px;
+	font-size: 2em;
+}
+
+ol{
+	color: #70DDB4;
+	background-color: #12563D;
+
+  	
+}
+
+footer{
+	display: flex;
+	justify-content: center;
 }

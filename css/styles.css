@@ -102,31 +102,78 @@
 /* ----------- Apple Watch ----------- */
 /* ----------- Moto 360 Watch ----------- */
 h1 {
-  color: #FFF8F8;
+  color: #70DDB4;
   font-family: "Oswald", sans-serif;
   font-size: 2em;
+  position: center;
+}
+
+ol {
+  font-size: 2em;
+  font: #70DDB4;
+}
+
+.teamOne {
+  background-color: #12563D;
+}
+
+.teamTwo {
+  background-color: #12563D;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 12vh 1fr 1fr 1fr;
-  grid-template-areas: "header header" "input button" "team1 team2" "randomiser randomiser";
-}
-
-.main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "left right";
-}
-
-.button {
-  grid-area: right;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 12vh 8vh 1fr 7vh;
+  grid-template-areas: "header header header" "input input input" "team team team" "randomiser randomiser randomiser";
 }
 
 .randomiser {
   grid-area: randomiser;
+}
+
+footer {
+  grid-area: randomiser;
+}
+
+input {
+  grid-area: input;
+}
+
+.addButton {
+  background-color: #2CD697;
+  background-image: unset;
+  border-radius: 50px;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  color: white;
+  position: relative;
+  padding: 10px;
+  margin-right: inherit;
+}
+.addButton:hover {
+  background-color: #FF3A33;
+}
+.addButton:active {
+  background-color: #1CFF49;
+}
+
+.randomiser {
+  background-color: #2CD697;
+  border-radius: 54px 5px 54px 5px;
+  border: 0;
+  width: 310px;
+  height: 50px;
+  color: white;
+  position: relative;
+  font-size: xx-large;
+}
+.randomiser:hover {
+  background-color: #FF3A33;
+}
+.randomiser:active {
+  background-color: #1CFF49;
 }
 
 html {
@@ -135,6 +182,7 @@ html {
 
 body {
   background-color: black;
+  height: 98vh;
 }
 
 header {
@@ -143,15 +191,33 @@ header {
   margin: 6px;
   display: grid;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .container {
   margin: 6px;
 }
 
-.form-control {
-  width: 73vw;
-  margin-left: 6px;
+.form-group {
+  display: flex;
+  justify-content: right;
+}
+
+.player-input {
+  width: 266px;
+  height: 40px;
+  margin-right: 6px;
+  font-size: 2em;
+}
+
+ol {
+  color: #70DDB4;
+  background-color: #12563D;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

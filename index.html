@@ -1,36 +1,28 @@
 <!doctype html>
 <html class="no-js" lang="">
-
 <head>
   <meta charset="utf-8">
   <title>Team Randomiser</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <!-- <link rel="stylesheet" href="css/normalize.css">
    --><link rel="stylesheet" href="css/styles.css">
-
   <meta name="theme-color" content="#fafafa">
 </head>
-
 <body class="container">
         <header class="page-header">
             <h1>TEAM RANDOMISER</h1>
         </header>
-
-        <main id="main" >
-            <div class="form-group">
-                <input id="players" class="form-control" placeholder="Enter 10 names" />
+        <section>
+          <div class="form-group">
+                <input id="players" class="player-input" placeholder="enter names" />
             </div>
-            <button id="add" class="btn btn-primary">Add</button>
-
-            <button id="randomiser" class="btn btn-primary">Randomise</button>
-
-            <hr />
+        </section>
+            <button id="add" class="btn btn-primary addButton">+</button>
+        <main id="main" >
             <div class="teams">
             <ol id="teamList1">
             </ol>
@@ -38,6 +30,10 @@
             </ol>
           </div>
         </main>
+        <footer>
+            <button id="randomiser" class="btn btn-primary randomiser">randomise</button>
+
+        </footer>
 
         <script src="js/add.js"></script>
     </body>

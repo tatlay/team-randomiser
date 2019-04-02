@@ -8,7 +8,7 @@
     let randomiser = d.getElementById("randomiser");
     let reset = d.getElementById("reset");
     //empty array that keeps track of things
-    let store = [];
+    let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 
     // when add is clicked
     add.addEventListener("click", () => {

@@ -1,27 +1,23 @@
 .container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 12vh 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 12vh 8vh 1fr 7vh;
   grid-template-areas: 
 
-  "header header"
-  "input button"
-  "team1 team2"
-  "randomiser randomiser";
-}
-
-
-.main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "left right";
-}
-
-.button{
-	grid-area: right;
+  "header header header"
+  "input input input"
+  "team team team"
+  "randomiser randomiser randomiser";
 }
 
 .randomiser{
 	grid-area: randomiser;
+}
+
+footer{
+	grid-area: randomiser;
+}
+
+input{
+	grid-area: input;
 }
