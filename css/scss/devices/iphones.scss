@@ -61,8 +61,8 @@
   and (-webkit-min-device-pixel-ratio: 2) { 
     body{ 
       background-image: url("scss/devices/bgimages/iphone6.png");
-      background-repeat: no repeat;
-
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     ol{
       font-size: 4vh;

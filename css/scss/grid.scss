@@ -1,11 +1,13 @@
 .container {
   display: grid;
   grid-template-columns: auto 24fr auto;
-  grid-template-rows: 3vh  78vh 7vh;
+  grid-template-rows: 3vh  78vh 7vh 7vh;
   grid-template-areas: 
 
   ". header ."
    ". team ."
+   ". logo ."
+
   ". randomiser .";
 }
 
@@ -18,7 +20,7 @@ footer{
 }
 
 section{
-	grid-area: input;
+	grid-area: logo;
 }
 
 main{

@@ -7,6 +7,7 @@
     let list2 = d.getElementById("teamList2");
     let randomiser = d.getElementById("randomiser");
     let reset = d.getElementById("reset");
+    let vs = d.getElementById("vs");
     //empty array that keeps track of things
 //    let store = [];    
 let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
@@ -70,7 +71,7 @@ let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "ni
             // set its text to the current string
             li.textContent = t1;
             // set its class
-            li.classList.add("teamOne");
+            li.classList.add("team1");
             // append it to the fragment
             fragment.appendChild(li);
         });
@@ -85,13 +86,16 @@ let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "ni
             // set its text to the current string
             li.textContent = t2;
             // set its class
-            li.classList.add("teamTwo");
+            li.classList.add("team2");
             // append it to the fragment
             fragment.appendChild(li);
         });
 
         // append the fragment to the list
         list2.appendChild(fragment);
+        
+        vs.textContent = "vs";
+        
         
     
     });
@@ -119,6 +123,7 @@ let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "ni
         });
         // append the fragment to the list
         list1.appendChild(fragment);
+        vs.textContent = "";
     
     });
 
