@@ -41,6 +41,16 @@
 /* Landscape */
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    background-image: url("scss/devices/bgimages/iphone6.png");
+    background-repeat: no repeat;
+  }
+
+  ol {
+    font-size: 4vh;
+  }
+}
 /* Portrait */
 /* Landscape */
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -49,6 +59,11 @@
 /* Landscape */
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  body {
+    background-image: url("scss/devices/bgimages/iphoneX.png");
+  }
+}
 /* Portrait */
 /* Landscape */
 /* ----------- iPad 1, 2, Mini and Air ----------- */
@@ -109,28 +124,19 @@ h1 {
 }
 
 ol {
-  font-size: 2em;
-  font: #70DDB4;
+  font-size: 4vh;
   font-family: "Oswald", sans-serif;
-}
-
-.teamOne {
-  background-color: #12563D;
-}
-
-.teamTwo {
-  background-color: #12563D;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 5px 24fr 5px;
-  grid-template-rows: 12vh 2vh 1fr 7vh;
-  grid-template-areas: ". header ." ". input ." ". team ." ". randomiser .";
+  grid-template-columns: auto 24fr auto;
+  grid-template-rows: 3vh 78vh 7vh;
+  grid-template-areas: ". header ." ". team ." ". randomiser .";
 }
 
-.randomiser {
-  grid-area: randomiser;
+header {
+  grid-area: header;
 }
 
 footer {
@@ -168,10 +174,10 @@ main {
   background-color: #2CD697;
   border-radius: 54px 5px 54px 5px;
   border: 0;
-  width: 310px;
+  width: 244px;
   height: 42px;
   color: white;
-  position: relative;
+  bottom: 10px;
   font-size: xx-large;
 }
 .randomiser:hover {
@@ -181,33 +187,40 @@ main {
   background-color: #1CFF49;
 }
 
-html {
-  background-color: white;
+.resetButton {
+  background-color: #FF3A33;
+  background-image: unset;
+  border-radius: 50px;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  color: white;
+  padding: 10px;
+  margin-right: inherit;
+}
+.resetButton:hover {
+  background-color: #2CD697;
+}
+.resetButton:active {
+  background-color: #1CFF49;
 }
 
-body {
+html {
   background-color: black;
-  height: 99vh;
 }
 
 header {
-  grid-area: header;
-  background-color: #333439;
-  margin: 6px;
-  display: grid;
+  display: flex;
   justify-content: center;
-  padding-bottom: 10px;
 }
 
-section {
-  grid-area: input;
+main {
   display: inline-flex;
-  justify-content: center;
-  justify-content: end;
+  justify-content: space-evenly;
 }
 
 .container {
-  margin: 6px;
+  padding: 10px;
 }
 
 .form-group {
@@ -216,26 +229,22 @@ section {
 }
 
 .player-input {
-  width: 268px;
+  width: 250px;
   height: 40px;
   margin-right: 6px;
   font-size: 2em;
+  background-color: lightgrey;
+  padding-left: 18px;
 }
 
 ol {
   color: #70DDB4;
-  background-color: #12563D;
   padding-left: 60px;
 }
 
 footer {
   display: flex;
   justify-content: center;
-  margin: -6px;
-}
-
-main {
-  margin: 6px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,7 +3,7 @@ html{
 }
 
 body{
-	background-color: black;
+	// background: no-repeat center/100% url("../devices/bgimages/iphoneX.png");
 }
 
 header{
@@ -14,6 +14,7 @@ header{
 main{
 	display: inline-flex;
 	justify-content: space-evenly;
+
 }
 
 .container {
@@ -26,10 +27,12 @@ main{
 }
 
 .player-input{
-	width: 268px;
+	width: 250px;
 	height: 40px;
 	margin-right: 6px;
 	font-size: 2em;
+	background-color: lightgrey;
+	padding-left: 18px;	
 }
 
 ol{
@@ -43,7 +46,6 @@ ol{
 footer{
 	display: flex;
 	justify-content: center;
-	background-color: black;
 
 
 }
