@@ -115,7 +115,17 @@
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+    
+    body{
 
+  background-image: url("bgimages/iphonex.png");
+  // background-size: cover;
+  // width: 97vw;
+  //   height: 98vh;
+  //   background-position: top center;
+  // background-repeat: no-repeat;
+  // background-color: unset !important;
+    }
 }
 
 /* Portrait */

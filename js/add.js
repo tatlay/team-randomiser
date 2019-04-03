@@ -8,8 +8,8 @@
     let randomiser = d.getElementById("randomiser");
     let reset = d.getElementById("reset");
     //empty array that keeps track of things
-    let store = [];    
-    // let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+//    let store = [];    
+let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 
     // when add is clicked
     add.addEventListener("click", () => {
@@ -95,4 +95,51 @@
         
     
     });
+
+    reset.addEventListener("click", () => {
+        //sets the array to 0
+        store = [];
+        players.value = "";
+        // focus the input
+        players.focus();
+
+        let fragment = d.createDocumentFragment();
+        // empty the list in HTML
+        list1.textContent = "";
+        list2.textContent = "";
+
+        // for each stored string
+        store.forEach(string => {
+            // create a list item
+            let li = d.createElement("li");
+            // set its text to the current string
+            li.textContent = string;
+            // append it to the fragment
+            fragment.appendChild(li);
+        });
+        // append the fragment to the list
+        list1.appendChild(fragment);
+    
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })(document);
