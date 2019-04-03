@@ -1,0 +1,97 @@
+// .vs {
+//   animation-duration: 2s;
+//   animation-name: slidein;
+// }
+
+// @keyframes slidein {
+//   from {
+//     margin-left: 100%;
+//     width: 1000%; 
+//   }
+
+//   to {
+//     margin-right: 0%;
+//     width: 100%;
+//   }
+// }
+
+body{
+  animation-duration: 3s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+     
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  animation-duration: 5s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+     
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  animation-duration: 15s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+     
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+// li {
+//   animation-duration: 5s;
+//   animation-name: fadein;
+// }
+
+// @keyframes fadein {
+//   from {
+//     opacity: 0;
+     
+//   }
+
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+// .team2 {
+//   animation-duration: 2s;
+//   animation-name: slidein;
+// }
+
+// @keyframes slidein {
+//   from {
+//     margin-top: 100%;
+//     width: 1000%; 
+//   }
+
+//   to {
+//     margin-left: 0%;
+//     width: 100%;
+//   }
+// }

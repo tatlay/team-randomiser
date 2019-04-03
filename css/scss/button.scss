@@ -10,15 +10,13 @@
 	padding: 10px;
 	margin-right: inherit;
 
-
 	&:hover {
 		background-color: #FF3A33;
 	}
-
 	&:active {
 		background-color: #1CFF49;
 	}
-
+	font-family: 'Oswald', sans-serif;
 
 }
 
@@ -27,7 +25,6 @@
 	border-radius: 54px 5px 54px 5px;
 	border: 0;
 	width: 244px;
-	height: 42px;
 	color: white;
 	bottom:10px;
 	font-size: xx-large;
@@ -35,12 +32,9 @@
 	&:hover {
 		background-color: #FF3A33;
 	}
-
 	&:active {
 		background-color: #1CFF49;
 	}
-
-
 }
 
 .resetButton{
@@ -54,14 +48,10 @@
 	padding: 10px;	
 	margin-right: inherit;
 	
-
 	&:hover {
 		background-color: #2CD697;
 	}
-
 	&:active {
 		background-color: #1CFF49;
 	}
-
-
 }

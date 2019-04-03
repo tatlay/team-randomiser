@@ -1,6 +1,8 @@
 /* ----------- Windows Phone ----------- */
 /* Portrait and Landscape */
 @import url("https://fonts.googleapis.com/css?family=Oswald:700");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+@import url("https://fonts.googleapis.com/css?family=Patua+One");
 /* Portrait */
 /* Landscape */
 /* ----------- HTC One ----------- */
@@ -126,13 +128,22 @@ h1 {
 
 ol {
   font-size: 4vh;
+  font-family: "Patua One", cursive;
+}
+
+.vs {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 12vh;
+}
+
+button {
   font-family: "Oswald", sans-serif;
 }
 
 .container {
   display: grid;
   grid-template-columns: auto 24fr auto;
-  grid-template-rows: 3vh 78vh 7vh 7vh;
+  grid-template-rows: 0vh 68vh 13vh 7vh;
   grid-template-areas: ". header ." ". team ." ". logo ." ". randomiser .";
 }
 
@@ -163,6 +174,7 @@ main {
   position: relative;
   padding: 10px;
   margin-right: inherit;
+  font-family: "Oswald", sans-serif;
 }
 .addButton:hover {
   background-color: #FF3A33;
@@ -176,7 +188,6 @@ main {
   border-radius: 54px 5px 54px 5px;
   border: 0;
   width: 244px;
-  height: 42px;
   color: white;
   bottom: 10px;
   font-size: xx-large;
@@ -211,6 +222,9 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background: no-repeat center/100% url("scss/devices/bgimages/iphone6.png");
 }
 
@@ -227,6 +241,7 @@ main {
 
 .container {
   padding: 10px;
+  overflow: hidden;
 }
 
 .form-group {
@@ -260,10 +275,49 @@ section {
 
 .vs {
   color: #FF3A33;
-  font-size: 5vh;
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+body {
+  animation-duration: 3s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header {
+  animation-duration: 5s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer {
+  animation-duration: 15s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

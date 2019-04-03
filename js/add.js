@@ -12,6 +12,38 @@
 //    let store = [];    
 let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 
+// when enter is pressed
+    players.addEventListener("keyup", function(e){
+        //add to the array
+        if (e.keyCode === 13) {
+           
+            store.push(players.value);
+            // set the input to be blank
+            players.value = "";
+            // focus the input
+            players.focus();
+
+            let fragment = d.createDocumentFragment();
+            // empty the list in HTML
+            list1.textContent = "";
+            list2.textContent = "";
+
+            // for each stored string
+            store.forEach(string => {
+                // create a list item
+                let li = d.createElement("li");
+                // set its text to the current string
+                li.textContent = string;
+                // append it to the fragment
+                fragment.appendChild(li);
+            });
+            // append the fragment to the list
+            list1.appendChild(fragment);
+            vs.textContent = "";
+            }  
+    });
+
+
     // when add is clicked
     add.addEventListener("click", () => {
         //add to the array
@@ -38,10 +70,12 @@ let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "ni
         });
         // append the fragment to the list
         list1.appendChild(fragment);
+        vs.textContent = "";
     
     });
      
     randomiser.addEventListener("click", () => {
+        
         function randomFunc(shuffleArr) {      
         let l = shuffleArr.length, temp, index;  
         while (l > 0) {  
@@ -93,7 +127,7 @@ let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "ni
 
         // append the fragment to the list
         list2.appendChild(fragment);
-        
+        //adds the vs text
         vs.textContent = "vs";
         
         
@@ -126,25 +160,5 @@ let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "ni
         vs.textContent = "";
     
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 })(document);
