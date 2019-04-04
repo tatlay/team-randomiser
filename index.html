@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Team Randomiser</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+   --><link rel="stylesheet" href="css/styles.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body class="container">
+        <header class="page-header">
+
+          <div class="form-group">
+                
+                <input id="players" class="player-input" placeholder="...enter names" />
+            </div>
+            <button id="add" class="btn btn-primary addButton">Add</button>
+        </header>
+
+        <main id="main" >
+
+            <ol id="teamList1" class="teamlist">
+            </ol>
+            <div id="vs" class="vs"></div>
+            <ol id="teamList2" class="teamlist">
+            </ol>
+        </main>
+<!-- animation -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<!-- animation ends -->
+       <section> <img width="275px" height="81px" src="css/scss/devices/bgimages/logo.png"></section>
+
+        <footer>
+            <button id="randomiser" class="btn btn-primary randomiser">randomise</button>
+            <button id="reset" class="btn btn-primary resetButton">Reset</button>
+
+        </footer>
+
+        <script src="js/add.js"></script>
+        <script src="js/anime.js"></script>
+    </body>
+</html>

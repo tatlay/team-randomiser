@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: auto 24fr auto;
+  grid-template-rows: 0vh 68vh 13vh 7vh;
+  grid-template-areas: 
+
+  ". header ."
+   ". team ."
+   ". logo ."
+  ". randomiser .";
+}
+
+header {
+  grid-area: header;
+}
+
+footer{
+	grid-area: randomiser;
+}
+
+section{
+	grid-area: logo;
+}
+
+main{
+	grid-area: team;
+}

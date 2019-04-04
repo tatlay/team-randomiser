@@ -1,0 +1,57 @@
+.addButton{
+	background-color: #2CD697;
+	background-image: unset;
+	border-radius: 50px;
+	border: 0;
+	width: 50px;
+	height: 50px;
+	color: white;
+	position: relative;
+	padding: 10px;
+	margin-right: inherit;
+
+	&:hover {
+		background-color: #FF3A33;
+	}
+	&:active {
+		background-color: #1CFF49;
+	}
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.randomiser{
+	background-color: #2CD697;
+	border-radius: 54px 5px 54px 5px;
+	border: 0;
+	width: 244px;
+	color: white;
+	bottom:10px;
+	font-size: xx-large;
+
+	&:hover {
+		background-color: #FF3A33;
+	}
+	&:active {
+		background-color: #1CFF49;
+	}
+}
+
+.resetButton{
+	background-color: #FF3A33;
+	background-image: unset;
+	border-radius: 50px;
+	border: 0;
+	width: 50px;
+	height: 50px;
+	color: white;
+	padding: 10px;	
+	margin-right: inherit;
+	
+	&:hover {
+		background-color: #2CD697;
+	}
+	&:active {
+		background-color: #1CFF49;
+	}
+}
