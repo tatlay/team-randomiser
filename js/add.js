@@ -9,8 +9,8 @@
     let reset = d.getElementById("reset");
     let vs = d.getElementById("vs");
     //empty array that keeps track of things
-//    let store = [];    
-let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+    let store = [];    
+//let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 
 // when enter is pressed
     players.addEventListener("keyup", function(e){
@@ -73,7 +73,7 @@ let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "ni
         vs.textContent = "";
     
     });
-     
+    //randomiser button 
     randomiser.addEventListener("click", () => {
         
         function randomFunc(shuffleArr) {      
@@ -133,7 +133,7 @@ let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "ni
         
     
     });
-
+    //reset button
     reset.addEventListener("click", () => {
         //sets the array to 0
         store = [];
