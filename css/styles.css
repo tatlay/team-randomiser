@@ -294,7 +294,7 @@ body {
   }
 }
 header {
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-name: fadein;
 }
 
@@ -317,6 +317,36 @@ footer {
   }
   to {
     opacity: 1;
+  }
+}
+.team1 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 1000%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.team2 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 1000%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 

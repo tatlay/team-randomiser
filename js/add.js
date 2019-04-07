@@ -1,3 +1,4 @@
+//iffy
 (d => {
     // get the various elements we'll need
     let players = d.getElementById("players");
@@ -10,19 +11,24 @@
     let vs = d.getElementById("vs");
     //empty array that keeps track of things
     let store = [];    
-//let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+    //let store = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+    //keep the above line to test faster when developing
 
-// when enter is pressed
-    players.addEventListener("keyup", function(e){
-        //add to the array
-        if (e.keyCode === 13) {
-           
+    let input = procedure => {
             store.push(players.value);
             // set the input to be blank
             players.value = "";
             // focus the input
             players.focus();
 
+    }
+
+    // when enter is pressed
+    players.addEventListener("keyup", function(e){
+        //add to the array
+        if (e.keyCode === 13) {
+           
+            input();
             let fragment = d.createDocumentFragment();
             // empty the list in HTML
             list1.textContent = "";
@@ -43,16 +49,11 @@
             }  
     });
 
-
     // when add is clicked
     add.addEventListener("click", () => {
         //add to the array
         
-        store.push(players.value);
-        // set the input to be blank
-        players.value = "";
-        // focus the input
-        players.focus();
+        input();
 
         let fragment = d.createDocumentFragment();
         // empty the list in HTML
@@ -95,6 +96,7 @@
         list1.textContent = "";
         list2.textContent = "";
 
+        //splits the array of 10 into 2x5
         let team2 = store.slice(0,5);
         let team1 = store.slice(5,10);
 
@@ -129,8 +131,6 @@
         list2.appendChild(fragment);
         //adds the vs text
         vs.textContent = "vs";
-        
-        
     
     });
     //reset button
